@@ -32,7 +32,7 @@ function convertToCelsius() {
   setTimeout( () => {
     if (tempType.value === "fahrenheit") {
       const FahrenheitToCelsius = (inputValue - 32) * (5 / 9);
-      celsiusField.innerHTML = `${FahrenheitToCelsius.toFixed(3)} &deg;f`;
+      celsiusField.innerHTML = `${FahrenheitToCelsius.toFixed(3)} &deg;C`;
     } else if (tempType.value === "kelvin") {
       const KelvinToCelsius = inputValue - 273.15;
       celsiusField.innerHTML = `${KelvinToCelsius.toFixed(3)} &deg;k`;
